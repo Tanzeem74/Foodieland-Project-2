@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/6485bf4df0.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar bg-base-100 shadow-sm">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="-1"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Recipies</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact</a></li>
+                            <li><a>About us</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl"><img src="./assets/images/Foodieland..png" alt="logo"></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Recipies</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact</a></li>
+                        <li><a>About us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="space-x-2">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-solid fa-x"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="mt-8">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row bg-[#E7F9FD] rounded-[40px] overflow-hidden">
+
+            <div class="flex-1 p-10 md:p-16 flex flex-col justify-between">
+
+                <div class="bg-white rounded-full px-4 py-2 flex items-center w-fit shadow-sm">
+                    <img src="./assets/images/hero-section/hot-recipes.png" class="w-5 h-5 mr-2" alt="icon">
+                    <span class="font-bold text-xs uppercase tracking-wide">Hot Recipes</span>
+                </div>
+
+                <div class="mt-8">
+                    <h1 class="text-5xl font-extrabold text-slate-900 leading-[1.1]">
+                        Spicy delicious <br> chicken wings
+                    </h1>
+                    <p class="text-slate-500 mt-6 max-w-md text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua enim ad minim.
+                    </p>
+                </div>
+
+                <div class="flex gap-3 mt-8">
+                    <div
+                        class="bg-black/5 px-4 py-2 rounded-full flex items-center text-xs font-semibold text-slate-600">
+                        <i class="fa-regular fa-clock"></i> 30 Minutes
+                    </div>
+                    <div
+                        class="bg-black/5 px-4 py-2 rounded-full flex items-center text-xs font-semibold text-slate-600">
+                        <i class="fa-solid fa-utensils"></i> Chicken
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between mt-12">
+                    <div class="flex items-center gap-3">
+                        <img src="./assets/images/hero-section/john-smith.png"
+                            class="w-12 h-12 rounded-full object-cover" />
+                        <div>
+                            <p class="font-bold text-sm">John Smith</p>
+                            <p class="text-xs text-slate-400">15 March 2022</p>
+                        </div>
+                    </div>
+
+                    <button
+                        class="bg-black text-white px-8 py-4 rounded-2xl flex items-center font-bold text-sm hover:opacity-90 transition">
+                        View Recipes
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex-1 relative flex items-center justify-center bg-white md:bg-transparent">
+                <div class="absolute top-10 left-10 w-24 h-24">
+                    <img src="./assets/images/hero-section/Badge.png" class="animate-spin-slow" />
+                </div>
+
+                <img src="./assets/images/hero-section/chicken-wings.png" class="w-full h-full object-cover" />
+
+                <div class="absolute right-0 top-0 h-full w-20 opacity-50">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="max-w-5xl mx-auto px-4 py-12">
+        <div class="flex justify-between items-center mb-10">
+            <h2 class="text-4xl font-bold text-black">Categories</h2>
+            <button
+                class="bg-[#E7F9FD] hover:bg-[#d5f2f8] text-black font-bold py-3 px-6 rounded-2xl transition-colors text-sm">
+                View All Categories
+            </button>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+
+            <div
+                class="group cursor-pointer flex flex-col items-center justify-between p-6 rounded-[30px] transition-all hover:shadow-lg bg-linear-to-t from-gray-100 to-transparent">
+                <img src="./assets/images/categories/breakfast.png" alt="Breakfast"
+                    class="w-24 h-24 object-contain mb-4 drop-shadow-xl group-hover:scale-110 transition-transform">
+                <span class="font-bold text-sm">Breakfast</span>
+            </div>
+
+            <div
+                class="group cursor-pointer flex flex-col items-center justify-between p-6 rounded-[30px] transition-all hover:shadow-lg bg-linear-to-t from-green-50 to-transparent">
+                <img src="./assets/images/categories/vegan.png" alt="Vegan"
+                    class="w-24 h-24 object-contain mb-4 drop-shadow-xl group-hover:scale-110 transition-transform">
+                <span class="font-bold text-sm">Vegan</span>
+            </div>
+
+            <div
+                class="group cursor-pointer flex flex-col items-center justify-between p-6 rounded-[30px] transition-all hover:shadow-lg bg-linear-to-t from-red-50 to-transparent">
+                <img src="./assets/images/categories/meat.png" alt="Meat"
+                    class="w-24 h-24 object-contain mb-4 drop-shadow-xl group-hover:scale-110 transition-transform">
+                <span class="font-bold text-sm">Meat</span>
+            </div>
+
+            <div
+                class="group cursor-pointer flex flex-col items-center justify-between p-6 rounded-[30px] transition-all hover:shadow-lg bg-linear-to-t from-yellow-50 to-transparent">
+                <img src="./assets/images/categories/dessert.png" alt="Dessert"
+                    class="w-24 h-24 object-contain mb-4 drop-shadow-xl group-hover:scale-110 transition-transform">
+                <span class="font-bold text-sm">Dessert</span>
+            </div>
+
+            <div
+                class="group cursor-pointer flex flex-col items-center justify-between p-6 rounded-[30px] transition-all hover:shadow-lg bg-linear-to-t from-orange-50 to-transparent">
+                <img src="./assets/images/categories/lunch.png" alt="Lunch"
+                    class="w-24 h-24 object-contain mb-4 drop-shadow-xl group-hover:scale-110 transition-transform">
+                <span class="font-bold text-sm">Lunch</span>
+            </div>
+
+            <div
+                class="group cursor-pointer flex flex-col items-center justify-between p-6 rounded-[30px] transition-all hover:shadow-lg bg-linear-to-t from-gray-100 to-transparent">
+                <img src="./assets/images/categories/chocolate.png" alt="Chocolate"
+                    class="w-24 h-24 object-contain mb-4 drop-shadow-xl group-hover:scale-110 transition-transform">
+                <span class="font-bold text-sm">Chocolate</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-4 py-16 text-center">
+        <h2 class="text-4xl font-bold mb-4">Simple and tasty recipes</h2>
+        <p class="text-gray-500 max-w-2xl mx-auto mb-12 text-sm leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua enim ad minim.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-linear-to-b from-[#E7F9FD] to-transparent p-4 rounded-[30px] flex flex-col text-left">
+                <div class="relative mb-4">
+                    <img src="./assets/images/recipes/cheeseburger.png" alt=""
+                        class="w-full h-56 object-cover rounded-[20px]">
+                    <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <h3 class="text-xl font-bold mb-6 leading-tight flex-1">
+                    Big and Juicy Wagyu Beef Cheeseburger
+                </h3>
+
+                <div class="flex gap-4">
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-regular fa-clock"></i> 30 Minutes
+                    </div>
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-solid fa-utensils"></i> Snack
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-linear-to-b from-[#E7F9FD] to-transparent p-4 rounded-[30px] flex flex-col text-left">
+                <div class="relative mb-4">
+                    <img src="./assets/images/recipes/salmon.png" alt=""
+                        class="w-full h-56 object-cover rounded-[20px]">
+                    <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <h3 class="text-xl font-bold mb-6 leading-tight flex-1">Fresh Lime Roasted Salmon with Ginger Sauce</h3>
+
+                <div class="flex gap-4">
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-regular fa-clock"></i> 30 Minutes
+                    </div>
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-solid fa-utensils"></i> Snack
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-linear-to-b from-[#E7F9FD] to-transparent p-4 rounded-[30px] flex flex-col text-left">
+                <div class="relative mb-4">
+                    <img src="./assets/images/recipes/pancake.png" alt=""
+                        class="w-full h-56 object-cover rounded-[20px]">
+                    <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <h3 class="text-xl font-bold mb-6 leading-tight flex-1">
+                    Strawberry Oatmeal Pancake with Honey Syrup
+                </h3>
+
+                <div class="flex gap-4">
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-regular fa-clock"></i> 30 Minutes
+                    </div>
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-solid fa-utensils"></i> Snack
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-linear-to-b from-[#E7F9FD] to-transparent p-4 rounded-[30px] flex flex-col text-left">
+                <div class="relative mb-4">
+                    <img src="./assets/images/recipes/salad.png" alt="" class="w-full h-56 object-cover rounded-[20px]">
+                    <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <h3 class="text-xl font-bold mb-6 leading-tight flex-1">
+                    Fresh and Healthy Mixed Mayonnaise Salad
+                </h3>
+
+                <div class="flex gap-4">
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-regular fa-clock"></i> 30 Minutes
+                    </div>
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-solid fa-utensils"></i> Snack
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-linear-to-b from-[#E7F9FD] to-transparent p-4 rounded-[30px] flex flex-col text-left">
+                <div class="relative mb-4">
+                    <img src="./assets/images/recipes/meatballs.png" alt=""
+                        class="w-full h-56 object-cover rounded-[20px]">
+                    <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <h3 class="text-xl font-bold mb-6 leading-tight flex-1">
+                    Chicken Meatballs with Cream Cheese
+                </h3>
+
+                <div class="flex gap-4">
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-regular fa-clock"></i> 30 Minutes
+                    </div>
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-solid fa-utensils"></i> Snack
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-linear-to-b from-[#E7F9FD] to-transparent p-4 rounded-[30px] flex flex-col text-left">
+                <div class="relative mb-4">
+                    <img src="./assets/images/recipes/meatballs.png" alt=""
+                        class="w-full h-56 object-cover rounded-[20px]">
+                    <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <h3 class="text-xl font-bold mb-6 leading-tight flex-1">
+                    Chicken Meatballs with Cream Cheese
+                </h3>
+
+                <div class="flex gap-4">
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-regular fa-clock"></i> 30 Minutes
+                    </div>
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-solid fa-utensils"></i> Snack
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-linear-to-b from-[#E7F9FD] to-transparent p-4 rounded-[30px] flex flex-col text-left">
+                <div class="relative mb-4">
+                    <img src="./assets/images/recipes/meatballs.png" alt=""
+                        class="w-full h-56 object-cover rounded-[20px]">
+                    <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <h3 class="text-xl font-bold mb-6 leading-tight flex-1">
+                    Chicken Meatballs with Cream Cheese
+                </h3>
+
+                <div class="flex gap-4">
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-regular fa-clock"></i> 30 Minutes
+                    </div>
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-solid fa-utensils"></i> Snack
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-linear-to-b from-[#E7F9FD] to-transparent p-4 rounded-[30px] flex flex-col text-left">
+                <div class="relative mb-4">
+                    <img src="./assets/images/recipes/meatballs.png" alt=""
+                        class="w-full h-56 object-cover rounded-[20px]">
+                    <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <h3 class="text-xl font-bold mb-6 leading-tight flex-1">
+                    Chicken Meatballs with Cream Cheese
+                </h3>
+
+                <div class="flex gap-4">
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-regular fa-clock"></i> 30 Minutes
+                    </div>
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-solid fa-utensils"></i> Snack
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-linear-to-b from-[#E7F9FD] to-transparent p-4 rounded-[30px] flex flex-col text-left">
+                <div class="relative mb-4">
+                    <img src="./assets/images/recipes/meatballs.png" alt=""
+                        class="w-full h-56 object-cover rounded-[20px]">
+                    <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <h3 class="text-xl font-bold mb-6 leading-tight flex-1">
+                    Chicken Meatballs with Cream Cheese
+                </h3>
+
+                <div class="flex gap-4">
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-regular fa-clock"></i> 30 Minutes
+                    </div>
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-solid fa-utensils"></i> Snack
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-10">
+
+        <div class="flex-1">
+            <h1 class="text-5xl md:text-6xl font-bold text-black leading-tight mb-8">
+                Everyone can be a chef in their own kitchen
+            </h1>
+            <p class="text-gray-500 text-base mb-10 max-w-lg">
+                Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliquat enim ad minim
+            </p>
+            <button class="bg-black text-white px-10 py-5 rounded-2xl font-bold hover:bg-gray-800">
+                Learn More
+            </button>
+        </div>
+
+        <div class="flex-1">
+            <div class="bg-[#E7F9FD] rounded-[50px] w-full  md:h-[500px]">
+
+                <img src="./assets/images/chef.png" alt="Chef" class="">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="max-w-5xl mx-auto px-4 py-20 text-center bg-linear-to-b from-white to-[#E7F9FD]">
+        <div class="mb-16">
+            <h2 class="text-4xl font-bold text-black mb-4">Check out @foodieland on Instagram</h2>
+            <p class="text-gray-500 max-w-2xl mx-auto text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua enim ad minim.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            <img src="./assets/images/instagram/insta-1.png" alt="">
+            <img src="./assets/images/instagram/insta-2.png" alt="">
+            <img src="./assets/images/instagram/insta-3.png" alt="">
+            <img src="./assets/images/instagram/insta-4.png" alt="">
+        </div>
+
+        <button
+            class="bg-black text-white px-8 py-4 rounded-2xl flex items-center gap-3 font-bold mx-auto hover:bg-gray-800">
+            Visit Our Instagram
+            <i class="fa-brands fa-instagram"></i>
+        </button>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-4 py-16">
+
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-black max-w-md leading-tight">
+                Try this delicious recipe to make your day
+            </h2>
+            <p class="text-gray-500 max-w-md text-sm leading-relaxed">
+                Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliquat enim ad minim.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-linear-to-b from-[#E7F9FD] to-transparent p-4 rounded-[30px] flex flex-col text-left">
+                <div class="relative mb-4">
+                    <img src="./assets/images/recipes/cheeseburger.png" alt=""
+                        class="w-full h-56 object-cover rounded-[20px]">
+                    <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <h3 class="text-xl font-bold mb-6 leading-tight flex-1">
+                    Big and Juicy Wagyu Beef Cheeseburger
+                </h3>
+
+                <div class="flex gap-4">
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-regular fa-clock"></i> 30 Minutes
+                    </div>
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-solid fa-utensils"></i> Snack
+                    </div>
+                </div>
+            </div>
+            <div class="bg-linear-to-b from-[#E7F9FD] to-transparent p-4 rounded-[30px] flex flex-col text-left">
+                <div class="relative mb-4">
+                    <img src="./assets/images/recipes/cheeseburger.png" alt=""
+                        class="w-full h-56 object-cover rounded-[20px]">
+                    <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <h3 class="text-xl font-bold mb-6 leading-tight flex-1">
+                    Big and Juicy Wagyu Beef Cheeseburger
+                </h3>
+
+                <div class="flex gap-4">
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-regular fa-clock"></i> 30 Minutes
+                    </div>
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-solid fa-utensils"></i> Snack
+                    </div>
+                </div>
+            </div>
+            <div class="bg-linear-to-b from-[#E7F9FD] to-transparent p-4 rounded-[30px] flex flex-col text-left">
+                <div class="relative mb-4">
+                    <img src="./assets/images/recipes/cheeseburger.png" alt=""
+                        class="w-full h-56 object-cover rounded-[20px]">
+                    <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <h3 class="text-xl font-bold mb-6 leading-tight flex-1">
+                    Big and Juicy Wagyu Beef Cheeseburger
+                </h3>
+
+                <div class="flex gap-4">
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-regular fa-clock"></i> 30 Minutes
+                    </div>
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-solid fa-utensils"></i> Snack
+                    </div>
+                </div>
+            </div>
+            <div class="bg-linear-to-b from-[#E7F9FD] to-transparent p-4 rounded-[30px] flex flex-col text-left">
+                <div class="relative mb-4">
+                    <img src="./assets/images/recipes/cheeseburger.png" alt=""
+                        class="w-full h-56 object-cover rounded-[20px]">
+                    <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <h3 class="text-xl font-bold mb-6 leading-tight flex-1">
+                    Big and Juicy Wagyu Beef Cheeseburger
+                </h3>
+
+                <div class="flex gap-4">
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-regular fa-clock"></i> 30 Minutes
+                    </div>
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-solid fa-utensils"></i> Snack
+                    </div>
+                </div>
+            </div>
+            <div class="bg-linear-to-b from-[#E7F9FD] to-transparent p-4 rounded-[30px] flex flex-col text-left">
+                <div class="relative mb-4">
+                    <img src="./assets/images/recipes/cheeseburger.png" alt=""
+                        class="w-full h-56 object-cover rounded-[20px]">
+                    <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <h3 class="text-xl font-bold mb-6 leading-tight flex-1">
+                    Big and Juicy Wagyu Beef Cheeseburger
+                </h3>
+
+                <div class="flex gap-4">
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-regular fa-clock"></i> 30 Minutes
+                    </div>
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-solid fa-utensils"></i> Snack
+                    </div>
+                </div>
+            </div>
+            <div class="bg-linear-to-b from-[#E7F9FD] to-transparent p-4 rounded-[30px] flex flex-col text-left">
+                <div class="relative mb-4">
+                    <img src="./assets/images/recipes/cheeseburger.png" alt=""
+                        class="w-full h-56 object-cover rounded-[20px]">
+                    <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <h3 class="text-xl font-bold mb-6 leading-tight flex-1">
+                    Big and Juicy Wagyu Beef Cheeseburger
+                </h3>
+
+                <div class="flex gap-4">
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-regular fa-clock"></i> 30 Minutes
+                    </div>
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-solid fa-utensils"></i> Snack
+                    </div>
+                </div>
+            </div>
+            <div class="bg-linear-to-b from-[#E7F9FD] to-transparent p-4 rounded-[30px] flex flex-col text-left">
+                <div class="relative mb-4">
+                    <img src="./assets/images/recipes/cheeseburger.png" alt=""
+                        class="w-full h-56 object-cover rounded-[20px]">
+                    <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <h3 class="text-xl font-bold mb-6 leading-tight flex-1">
+                    Big and Juicy Wagyu Beef Cheeseburger
+                </h3>
+
+                <div class="flex gap-4">
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-regular fa-clock"></i> 30 Minutes
+                    </div>
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-solid fa-utensils"></i> Snack
+                    </div>
+                </div>
+            </div>
+            <div class="bg-linear-to-b from-[#E7F9FD] to-transparent p-4 rounded-[30px] flex flex-col text-left">
+                <div class="relative mb-4">
+                    <img src="./assets/images/recipes/cheeseburger.png" alt=""
+                        class="w-full h-56 object-cover rounded-[20px]">
+                    <button class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <h3 class="text-xl font-bold mb-6 leading-tight flex-1">
+                    Big and Juicy Wagyu Beef Cheeseburger
+                </h3>
+
+                <div class="flex gap-4">
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-regular fa-clock"></i> 30 Minutes
+                    </div>
+                    <div class="flex items-center text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                        <i class="fa-solid fa-utensils"></i> Snack
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="max-w-5xl mx-auto px-4 py-20">
+        <div class="relative rounded-[40px] overflow-hidden min-h-[450px] flex items-center justify-center p-8 md:p-24 bg-cover bg-center bg-no-repeat shadow-inner"
+            style="background-image: url('assets/images/sub-card.png');">
+
+            <div class="absolute inset-0 bg-[#E7F9FD]/50"></div>
+
+            <div class="relative z-10 w-full text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-black mb-6 tracking-tight">
+                    Deliciousness to your inbox
+                </h2>
+                <p class="text-gray-600 max-w-xl mx-auto mb-10 text-sm leading-relaxed font-semibold">
+                    Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliquat enim ad minim.
+                </p>
+
+                <form class="flex flex-col sm:flex-row max-w-md mx-auto bg-white p-2 rounded-3xl shadow-lg">
+                    <input type="email" placeholder="Your email address..."
+                        class="flex-1 px-6 py-4 outline-none text-sm rounded-[20px] text-gray-700" required />
+                    <button type="submit"
+                        class="bg-black text-white px-10 py-4 rounded-[18px] font-bold text-sm hover:bg-zinc-800 transition-all active:scale-95 mt-2 sm:mt-0">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="max-w-5xl mx-auto px-4 py-12 mt-20">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
+            <div class="max-w-xs">
+                <img src="./assets/images/Foodieland..png" alt="">
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    Lorem ipsum dolor sit amet, consectetuipisicing elit,
+                </p>
+            </div>
+
+            <ul class="flex flex-wrap gap-8 md:gap-12 font-bold text-sm text-black">
+                <li><a href="#" class="hover:text-gray-600 transition">Recipes</a></li>
+                <li><a href="#" class="hover:text-gray-600 transition">Blog</a></li>
+                <li><a href="#" class="hover:text-gray-600 transition">Contact</a></li>
+                <li><a href="#" class="hover:text-gray-600 transition">About us</a></li>
+            </ul>
+        </div>
+
+        <div class="border-t border-gray-100 w-full pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-gray-400 text-sm">
+                © 2020 Flowbase. Powered by <span class="text-orange-400">Shah Tanzeem Afsar</span>
+            </p>
+
+            <div class="flex items-center gap-8">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-solid fa-x"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
